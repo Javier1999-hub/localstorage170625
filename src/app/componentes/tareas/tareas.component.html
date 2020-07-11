@@ -1,0 +1,24 @@
+<br>
+<br>
+<div class="animated fadeIn">
+  <div class="input-group ">
+      <div class="input-group-prepend">
+          <span class="input-group-text">Tarea: </span>
+      </div>
+      <input type="text" class="form-control" id="text" (keyup.enter)='agregarTarea(tareaNueva.value)' #tareaNueva placeholder="Descripcion de la tarea" app-restrict-input="words" name="texto" autofocus>
+      <div class="input-group-append">
+          <button class="btn btn-primary" (click)='agregarTarea(tareaNueva.value)' type="button">Agregar</button>
+      </div>
+  </div>
+  <div class="invalid-feedback">
+      Ingrese un texto valido.
+  </div>
+  <br>
+  <div class="input-group-append">
+      <div class="btn-group mr-2">
+          <button class="btn btn-danger" (click)='borrar()'> Eliminar todos</button>
+      </div>
+  </div>
+  <br>
+</div>
+<app-tareasagregadas class="animated fadeIn fast"></app-tareasagregadas>

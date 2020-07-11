@@ -1,0 +1,10 @@
+<div *ngFor="let notas of notaService.nota ">
+
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+<div class="card-header">{{notas.fecCre | date:'dd-MM-yyyy'}}</div>
+<div class="card-body">
+    <h5 class="card-title">{{notas.titulo}}</h5>
+    <p class="card-title">{{notas.descripcion}}</p>
+</div>
+</div>
+</div>

@@ -1,0 +1,25 @@
+<br>
+<br>
+<div class="mb-3 animated fadeIn fast">
+  <div class="input-group is-invalid">
+      <div class="input-group-prepend">
+          <span class="input-group-text" id="validatedInputGroupPrepend">Título</span>
+      </div>
+      <input id="text" type="text" class="form-control" #titulo required autofocus>
+  </div>
+  <br>
+  <div class="input-group is-invalid">
+      <div class="input-group-prepend">
+          <span class="input-group-text" id="validatedInputGroupPrepend">Descripción</span>
+      </div>
+      <textarea id="text" type="text" class="form-control" #descri required autofocus></textarea>
+  </div>
+  <br>
+  <div class="input-group-append">
+      <button class="btn btn-primary" (click)='agregarNotass(titulo.value, descri.value)' type="button">Agregar</button>
+  </div>
+
+</div>
+<div class="card-columns">
+  <app-notasagregadas class="animated fadeIn fast"></app-notasagregadas>
+</div>
